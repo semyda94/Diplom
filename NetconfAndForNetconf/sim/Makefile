@@ -22,3 +22,10 @@ unconfig:
 .PHONY: check-config
 check-config:
 	bash ./../common/scripts/check-config.sh;
+
+.PHONY: clean
+clean:
+	for dir in $(SUBDIRS-LIBS); do \
+		export CONFIG_PATH=$(CONFIG_PATH); \
+		$(MAKE) -C $(LIBS_DIR)/$$dir clean; \
+	done;
