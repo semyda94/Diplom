@@ -1,0 +1,12 @@
+prefix=/Users/SemykinDmitriy/Desktop/Diplom/NetconfAndForNetconf/sim/../common/libs/glib/build/sim/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: GObject
+Description: GLib Type, Object, Parameter and Signal Library
+Requires: glib-2.0
+Version: 2.33.12
+Libs: -L${libdir} -lgobject-2.0
+Libs.private: -L/Users/SemykinDmitriy/Desktop/Diplom/NetconfAndForNetconf/sim/../common/libs/libffi/build/sim/install/lib -lffi
+Cflags:
